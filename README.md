@@ -16,3 +16,4 @@ You should create one R script called run_analysis.R that does the following.
 
 The data should be unzipped into the working directory.
 The explanations of how the script "run_analysis.R" works can be found inside the script file as commentaries. 
+The description of the variables, the data, and the transformations or work performed to clean up the data are in the file CodeBook.md.
