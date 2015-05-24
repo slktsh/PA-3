@@ -20,5 +20,10 @@ You should create one R script called run_analysis.R that does the following.
 3. run_analysis.R - the script that performs the transformation
 
 The data should be unzipped into the working directory.
-The explanations of how the script "run_analysis.R" works can be found inside the script file as commentaries. 
+The explanations of how the script "run_analysis.R" works can be found inside the script file as commentaries and CodeBook.md file. 
 The description of the variables, the data, and the transformations or work performed to clean up the data are in the file CodeBook.md.
+
+The code to view the resulting tidy data file is 
+
+data <- read.table(file_path, header = TRUE)
+View(data)
