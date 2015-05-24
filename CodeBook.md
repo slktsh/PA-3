@@ -49,13 +49,14 @@ The index file was created to exclude the variables with the names not contatini
 The activity labels were transformed from 1-6 to the descriptive ones: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS. (Step 3)
 
 The variable names were changed to the more decriptive one in the following way: 
-t -> TimeDomain
-f -> FrequncyDomain
-Acc -> Acceleration
-Mag -> Magnitude
-GyroJerk -> AngularAcceleration
-Gyro -> AngularSpeed 
-etc.
+- t -> TimeDomain
+- f -> FrequncyDomain
+- Acc -> Acceleration
+- Mag -> Magnitude
+- GyroJerk -> AngularAcceleration
+- Gyro -> AngularSpeed 
+- etc.
+
 the parenthesis were removed
 This completes the Step 4 to give tbl_s4 (intermediate data set required by the Step 4)
 
