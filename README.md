@@ -23,6 +23,26 @@ The data should be unzipped into the working directory.
 The explanations of how the script "run_analysis.R" works can be found inside the script file as commentaries and CodeBook.md file. 
 The description of the variables, the data, and the transformations or work performed to clean up the data are in the file CodeBook.md.
 
+#### Script
+The test and the training sets were imported from the unzipped data and merged. (Step 1)
+The index file was created to exclude the variables with the names not contatining "std" or "mean" for standart deviation and mean values respectively. (Step 2)
+
+The activity labels were transformed from 1-6 to the descriptive ones: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS. (Step 3)
+
+The variable names were changed to the more decriptive one in the following way: 
+t -> TimeDomain
+f -> FrequncyDomain
+Acc -> Acceleration
+Mag -> Magnitude
+GyroJerk -> AngularAcceleration
+Gyro -> AngularSpeed 
+etc.
+the parenthesis were removed
+This completes the Step 4 to give tbl_s4 (intermediate data set required by the Step 4)
+
+The obtained data set was grouped by the subject and activity and the mean values of the variables for each group were calculated. The variables in final data set (tbl_s5) were given the new names by the addition of "Mean" in the beginning of each column name.
+This completes the Step 5.
+
 The code to view the resulting tidy data file is 
 
 data <- read.table(file_path, header = TRUE)
